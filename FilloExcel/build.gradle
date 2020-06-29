@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    testImplementation "net.serenity-bdd:serenity-core:2.1.6"
+    testImplementation "net.serenity-bdd:serenity-junit:2.1.6"
+    implementation "net.serenity-bdd:serenity-screenplay:2.1.6"
+    implementation "net.serenity-bdd:serenity-cucumber:1.9.51"
+    compile group: 'com.codoid.products', name: 'fillo', version: '1.18'
+
+
+}
